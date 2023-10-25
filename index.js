@@ -126,6 +126,7 @@ imap.once("ready", () => {
               for(let filePath of pdfFiles) {
                 fs.unlinkSync(filePath);
               }
+              pdfFiles = []
               
               console.log('Original and merged PDF files deleted successfully!');
             }
